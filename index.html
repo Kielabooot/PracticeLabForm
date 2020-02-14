@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<link rel="stylesheet" type="text/css" href="css/validation.css">
+	<script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+
+<div>
+	<form>
+		<h4>Create a new event</h4>
+		<label for="eventType">Event Type:</label>
+		<select id="eventType" required>
+		  <option disabled selected>	Select an Event	</option>
+		  <option>Conference</option>
+		  <option>Seminar</option>
+		  <option>Meetings</option>
+		  <option>Team Building</option>
+		</select>	<br>
+
+		<label for="eventTitle"> Event Title: </label>
+		<input type="text" id="eventTitle" name="" required> <br>
+
+		<label>Event Dates : </label>
+		<input type="date" name="" id="firstDate" required onchange="inputdate()"> <label> to </label> 
+		<input type="date" id="secondDate" name="" required> <br>
+
+
+		<label for="postingDate">Posting Date: </label>
+		<input type="date" name="" id="postingDate"  required > <br><br>
+
+		<input type="checkbox" name="" >
+		<label>Is Registration Required? </label><br>
+
+		<input type="checkbox" name="">
+		<label>Is this event associated with any Family Programs?</label> <br>
+
+		<input type="checkbox" name="">
+		<label>Upon Registation Completion, Are User to Receive an Auto Generated Email?</label> <br>
+
+		<input type="checkbox" name="">
+		<label>Is There a Point of Contact? </label><br>
+
+		<input type="checkbox" name="">
+		<label>	Is There a Hosting Command Point of Contact?	</label><br><br>
+
+		<input type="submit" onclick="alert ('Data Sent to Server')" name="" value="Save">
+		<input type="reset" name="" value="Clear">
+
+	</form>
+
+</div>
+
+</body>
+</html>
